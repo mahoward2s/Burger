@@ -1,0 +1,19 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "This is an application to create burgers and then devour the burger",
+  "main": "server.js",
+  "scripts": {
+    "test": "n/a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahoward2s/Burger.git"
+  },
+  "author": "mahoward2s",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahoward2s/Burger/issues"
+  },
+  "homepage": "https://github.com/mahoward2s/Burger#readme"
+}
