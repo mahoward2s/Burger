@@ -1,0 +1,16 @@
+body {
+    background-color: #00ff15;
+    justify-content: center;
+}
+
+h1 {
+    color: red;
+    font-weight: bolder;
+    background-color: yellow;
+}
+
+h2 {
+    color: red;
+    font-weight: bold;
+    background-color: yellow;
+}
