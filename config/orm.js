@@ -84,6 +84,8 @@ const orm = {
       cb(result);
     });
   },
+
+
   delete(table, condition, cb) {
     let queryString = `DELETE FROM ${table}`;
     queryString += ' WHERE ';
@@ -98,6 +100,5 @@ const orm = {
     });
   },
 };
-
-// Export the orm object for the model (cat.js).
-module.exports = orm;
+  // Export the orm object for the model (burger.js).
+  module.exports = orm;

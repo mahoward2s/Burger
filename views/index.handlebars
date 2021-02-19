@@ -3,9 +3,8 @@
 <h2>Burgers I Want To Eat!</h2>
 
 <ul>
-  {{#each cats}}
-  {{#unless sleepy}}
-  {{> cats/cat-block sleep=true}}
+  {{#each burger_data}}
+  {{#unless this.devoured}}
   {{/unless}}
   {{/each}}
 </ul>
@@ -13,9 +12,8 @@
 <h2>Nom Nom Nom</h2>
 
 <ul>
-  {{#each cats}}
-  {{#if sleepy}}
-  {{> cats/cat-block sleep=false}}
+  {{#each burger_data}}
+  {{#if this.devoured}}
   {{/if}}
   {{/each}}
 </ul>
