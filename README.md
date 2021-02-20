@@ -16,7 +16,7 @@
 
 The following animation demonstrates the application functionality:
 
-![Burger](/assets/img/Matt's Burgers.gipf)
+![Burger](/assets/img/Matts_Burgers.gif)
 
 ## Description
 This is an application that allows users to create burgers they would like to eat and keep track of burgers that they have already devoured.   
