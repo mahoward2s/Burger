@@ -4,6 +4,7 @@
   "description": "This is an application to create burgers and then devour the burger",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "n/a"
   },
   "repository": {
