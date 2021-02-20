@@ -1,0 +1,9 @@
+<li>
+    <h4>{{burger_name}}</h4>
+
+    <button type="button" class="btn btn-secondary change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+        {{#if devoured}}Move to Available{{else}}Devour!{{/if}}
+    </button>
+
+    <button type="button" class="btn btn-danger delete burger" data-id="{{this.id}}">Delete</button>
+</li>

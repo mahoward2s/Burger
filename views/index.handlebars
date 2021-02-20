@@ -1,30 +1,85 @@
-<h1>Burgers Of The Day</h1>
-
-<h2>Burgers I Want To Eat!</h2>
-
-<ul>
-  {{#each burger_data}}
-  {{#unless this.devoured}}
-  {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Nom Nom Nom</h2>
-
-<ul>
-  {{#each burger_data}}
-  {{#if this.devoured}}
-  {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add A Burger To Eat</h2>
-<form id="create-form">
-
-  <div class="form-group">
-    <label for="ca">Burger:</label>
-    <input type="text" id="ca" name="name">
+<nav class="navbar navbar-light bg-success">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 mx-auto">
+      <h1 class="text-alert">Matt's Burgers</h1>
+    </span>
   </div>
+</nav>
 
-  <button type="submit">Submit</button>
-</form>
+<div class="mt-5 mb-5 text-center">
+  <img class="w-10 h-10" src="/assets/img/burgerlogo.png">
+</div>
+
+<div class="container-fluid">
+  <div class="card bg-info mx-auto w-75 bg-">
+    <div class="card-header bg-success text-warning text-center">
+      <h2>Add A Burger</h2>
+    </div>
+    <div class="card-body bg-info mx-auto">
+      <form id="create-form">
+        <div class="form-group text-center">
+          <h3 for="ca">Burger Name:</h3>
+          <input class="fs-4" type="text" id="ca" name="burger_name">
+        </div>
+
+        <div class="form-group">
+          <label class="fs-3 mt-4 text-center" for="devoured">Devoured?</label>
+          <div class="form-check">
+            <input class="form-check-input fs-5" type="radio" name="devoured" value="0" id="available" checked>
+            <label class="form-check-label fs-5" for="flexRadioDefault2">Available</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input fs-5" type="radio" name="devoured" value="1" id="devoured">
+            <label class="form-check-label fs-5" for="flexRadioDefault1">Devoured!</label>
+          </div>
+        </div>
+
+        <button class="btn btn-success mt-4 fs-5" type="submit">Add Burger</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container align-items-center">
+  <div class="row">
+
+    {{!-- Available Card --}}
+    <div class="col-lg-6">
+      <div class="card bg-info mb-5 mt-5">
+        <div class="card-header bg-success text-warning text-center">
+          <h2>Available Burgers</h2>
+        </div>
+        <div class="card-body text-center bg-info">
+          <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {{!-- Devoured Card --}}
+    <div class="col-lg-6">
+      <div class="card bg-info mb-5 mt-5">
+        <div class="card-header bg-success text-warning text-center">
+          <h2>Devoured Burgers!</h2>
+        </div>
+        <div class="card-body text-center bg-info">
+          <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

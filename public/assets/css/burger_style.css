@@ -1,4 +1,9 @@
-body {
+html, body {
+    background: url(/assets/img/backgroundburger.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
     background-color: #00ff15;
     justify-content: center;
 }
@@ -13,4 +18,10 @@ h2 {
     color: red;
     font-weight: bold;
     background-color: yellow;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    list-style-type: none;
 }

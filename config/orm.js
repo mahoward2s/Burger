@@ -66,7 +66,7 @@ const orm = {
       cb(result);
     });
   },
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // An example of objColVals would be {burger_name: burger, devoured: true}
   updateOne(table, objColVals, condition, cb) {
     let queryString = `UPDATE ${table}`;
 

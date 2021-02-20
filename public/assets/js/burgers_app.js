@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const newDevouredState = {
           devoured: newDevoured,
         };
+        
+        console.log(id)
+        console.log(newDevouredState)
 
         fetch(`/api/burgers/${id}`, {
           method: 'PUT',
@@ -32,7 +35,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           // Check that the response is all good
           // Reload the page so the user can see the new quote
           if (response.ok) {
-            console.log(`changed devour to: ${newDevoured}`);
+            console.log(`changed available to: ${newDevoured}`);
             location.reload('/');
           } else {
             alert('something went wrong!');
@@ -46,7 +49,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const createBurgerBtn = document.getElementById('create-form');
 
   if (createBurgerBtn) {
-    submitBtn.addEventListener('submit', (e) => {
+    createBurgerBtn.addEventListener('submit', (e) => {
       e.preventDefault();
 
       // Grabs the value of the textarea that goes by the name, "quote"
