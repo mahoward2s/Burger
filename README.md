@@ -16,23 +16,20 @@
 
 The following animation demonstrates the application functionality:
 
-![Burger]()
-
-- Click to download video 
-![Burger]()
+![Burger](/public/assets/img/Matt's Burgers.gipf)
 
 ## Description
-
+This is an application that allows users to create burgers they would like to eat and keep track of burgers that they have already devoured.   
 
 ## Installation
 - Link to Repo:
 https://github.com/mahoward2s/Burger
 
-- Linke to Launched App:
-
+- Link to Launched App:
+https://limitless-eyrie-37289.herokuapp.com/
 
 ## Usage 
- 
+ This application would be useful for creating burgers of the day and keeping track of them.  Just a fun interactive app.
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
