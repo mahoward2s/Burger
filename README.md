@@ -29,7 +29,7 @@ https://github.com/mahoward2s/Burger
 https://limitless-eyrie-37289.herokuapp.com/
 
 ## Usage 
- This application would be useful for creating burgers of the day and keeping track of them.  Just a fun interactive app.
+ This application would be useful for creating burgers of the day and keeping track of them.  Just a fun interactive app for a restaurant.  
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
